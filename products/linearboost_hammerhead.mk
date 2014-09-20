@@ -23,3 +23,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # boot animation
 PRODUCT_COPY_FILES += \
     vendor/Linearboost/proprietary/hammerhead/system/media/bootanimation.zip:system/media/bootanimation.zip
+
+# fix for green line in videos
+PRODUCT_COPY_FILES += \
+    vendor/Linearboost/proprietary/hammerhead/system/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so
