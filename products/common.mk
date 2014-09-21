@@ -19,7 +19,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/Linearboost/prebuilt/apk/NovaLauncher.apk:system/app/NovaLauncher.apk
 PRODUCT_COPY_FILES += \
-    vendor/Linaerboost/prebuilt/lib/libgif.so:system/lib/libgif.so
+    vendor/Linearboost/prebuilt/lib/libgif.so:system/lib/libgif.so
 
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/Linearboost/overlay/common
