@@ -24,6 +24,10 @@ PRODUCT_COPY_FILES += \
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/Linearboost/overlay/common
 
+PRODUCT_PACKAGES += \
+    Busybox \
+    Lightbulb
+
 # Latin IME lib
 PRODUCT_COPY_FILES += \
     vendor/Linearboost/proprietary/common/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
