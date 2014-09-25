@@ -49,4 +49,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/Linearboost/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/Linearboost/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/Linearboost/prebuilt/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh 
+    vendor/Linearboost/prebuilt/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh
+
+# SU Support
+PRODUCT_COPY_FILES += \
+    vendor/Linearboost/prebuilt/bin/su:system/xbin/daemonsu \
+    vendor/Linearboost/prebuilt/bin/su:system/xbin/su \
+    vendor/Linearboost/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+    vendor/Linearboost/prebuilt/apk/Superuser.apk:system/app/Superuser.apk
