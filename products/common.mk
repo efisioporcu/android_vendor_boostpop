@@ -47,3 +47,9 @@ PRODUCT_COPY_FILES += \
 # Bootanimation support
 PRODUCT_COPY_FILES += \
     vendor/Linearboost/prebuilt/system/media/bootanimation.zip:system/media/bootanimation.zip
+
+# Gapps backup script
+PRODUCT_COPY_FILES += \
+    vendor/Linearboost/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/Linearboost/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/Linearboost/prebuilt/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh 
