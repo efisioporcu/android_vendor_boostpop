@@ -31,3 +31,18 @@ PRODUCT_COPY_FILES += \
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
+
+# init.d script support
+PRODUCT_COPY_FILES += \
+    vendor/Linearboost/prebuilt/bin/sysinit:system/bin/sysinit
+
+# userinit support
+PRODUCT_COPY_FILES += \
+    vendor/Linearboost/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit
+    vendor/Linearboost/prebuilt/etc/init.d/00banner:system/etc/init.d/00banner
+
+# Gapps backup script
+PRODUCT_COPY_FILES += \
+    vendor/Linearboost/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/Linearboost/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/Linearboost/prebuilt/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh 
