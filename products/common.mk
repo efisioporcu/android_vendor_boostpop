@@ -32,6 +32,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/Linearboost/proprietary/common/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 
+# CDMA APN list
+PRODUCT_COPY_FILES += \
+    vendor/Linearboost/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
+
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
