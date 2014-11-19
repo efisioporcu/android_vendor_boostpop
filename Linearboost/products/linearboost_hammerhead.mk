@@ -15,3 +15,8 @@ PRODUCT_MANUFACTURER := LGE
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME="hammerhead" 
 BUILD_FINGERPRINT="google/hammerhead/hammerhead:5.0/LRX21Q/1570415:user/release-keys" 
 PRIVATE_BUILD_DESC="hammerhead-user 5.0 LRX21Q 1570415 release-keys"
+
+# Add linear kernel support
+PRODUCT_COPY_FILES += \
+    vendor/Linearboost/prebuilt/etc/init.d/99linear:system/etc/init.d/99linear
+    vendor/Linearboost/prebuilt/etc/linear.conf:system/etc/linear.conf
