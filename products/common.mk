@@ -38,12 +38,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/Linearboost/prebuilt/bin/sysinit:system/bin/sysinit
 
-# userinit support
-PRODUCT_COPY_FILES += \
-    vendor/Linearboost/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit
-    vendor/Linearboost/prebuilt/etc/init.d/00banner:system/etc/init.d/00banner
-
-
 # Bootanimation support
 PRODUCT_COPY_FILES += \
     vendor/Linearboost/prebuilt/system/media/bootanimation.zip:system/media/bootanimation.zip
