@@ -25,4 +25,11 @@
 
     <!-- Doze: should the pickup sensor be used as a pulse signal? -->
     <bool name="doze_pulse_on_pick_up">true</bool>
+
+    <!-- Doze: when to pulse after a buzzworthy notification arrives -->
+    <string name="doze_pulse_schedule" translatable="false">2s</string>
+
+    <!-- Doze: pulse parameter - once faded in, how long does it stay visible? -->
+    <integer name="doze_pulse_duration_visible">4200</integer>
+
 </resources>
