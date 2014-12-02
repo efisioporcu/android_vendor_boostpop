@@ -18,6 +18,6 @@ PRIVATE_BUILD_DESC="hammerhead-user 5.0 LRX21Q 1570415 release-keys"
 
 # Linear kernel files
 PRODUCT_COPY_FILES += \
+    vendor/Linearboost/prebuilt/bin/linear.sh:system/bin/linear.sh \
     vendor/Linearboost/prebuilt/etc/linear.conf:system/etc/linear.conf \
     vendor/Linearboost/prebuilt/etc/init.d/99linear:system/etc/init.d/99linear \
-
