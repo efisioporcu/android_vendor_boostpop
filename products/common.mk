@@ -42,6 +42,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/Linearboost/prebuilt/system/media/bootanimation.zip:system/media/bootanimation.zip
 
+# SU Support
+PRODUCT_COPY_FILES += \
+    vendor/Linearboost/prebuilt/misc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/Linearboost/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+
 # Gapps backup script
 PRODUCT_COPY_FILES += \
     vendor/Linearboost/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
