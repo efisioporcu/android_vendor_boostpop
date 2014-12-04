@@ -37,7 +37,7 @@
     <string name="doze_pulse_schedule" translatable="false">2s</string>
 
     <!-- Doze: pulse parameter - once faded in, how long does it stay visible? -->
-    <integer name="doze_pulse_duration_visible">4200</integer>
+    <integer name="doze_pulse_duration_visible">5500</integer>
 
     <!-- The number of columns in the QuickSettings -->
     <integer name="quick_settings_num_columns">4</integer>
