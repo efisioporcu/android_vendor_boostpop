@@ -28,8 +28,8 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/Linearboost/overlays/common
 
 # Bring in camera effects
 PRODUCT_COPY_FILES += \
-    vendor/Linearboost/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/Linearboost/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
+    vendor/Linearboost/prebuilt/system/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/Linearboost/prebuilt/system/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
 
 # CDMA APN list
 PRODUCT_COPY_FILES += \
