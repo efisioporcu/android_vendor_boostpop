@@ -1,6 +1,24 @@
 # Inherit AOSP device configuration for hammerhead
 $(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
 
+# Live wallpaper packages
+PRODUCT_PACKAGES := \
+    LiveWallpapersPicker \
+    VisualizationWallpapers \
+    librs_jni
+
+# Pick up overlay for features that depend on non-open-source files
+DEVICE_PACKAGE_OVERLAYS := vendor/lge/hammerhead/overlay
+
+# Apps
+PRODUCT_PACKAGES += \
+    qcrilmsgtunnel \
+    SprintHiddenMenu \
+    shutdownlistener \
+    TimeService \
+
+$(call inherit-product, vendor/lge/hammerhead/hammerhead-vendor-blobs.mk)
+
 # Inherit common product files
 $(call inherit-product, vendor/Linearboost/products/common.mk)
 
