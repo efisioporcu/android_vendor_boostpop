@@ -38,4 +38,4 @@ PRIVATE_BUILD_DESC="hammerhead-user 5.0 LRX22C 1570415 release-keys"
 PRODUCT_COPY_FILES += \
     vendor/Linearboost/prebuilt/bin/linear.sh:system/bin/linear.sh \
     vendor/Linearboost/prebuilt/etc/linear.conf:system/etc/linear.conf \
-    vendor/Linearboost/prebuilt/etc/init.d/99linear:system/etc/init.d/99linear \
+    vendor/Linearboost/prebuilt/bin/33linear:system/addon.h/33linear \
