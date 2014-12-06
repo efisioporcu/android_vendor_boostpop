@@ -16,7 +16,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Linearboost build prop
 PRODUCT_PROPERTY_OVERRIDES += \
-    pm.sleep.mode=1 \
     wifi.supplicant_scan_interval=300 
 
 # Proprietary latinime lib needed for swyping
@@ -39,10 +38,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
-# init.d script support
-PRODUCT_COPY_FILES += \
-    vendor/Linearboost/prebuilt/bin/sysinit:system/bin/sysinit
-
 # Bootanimation support
 PRODUCT_COPY_FILES += \
     vendor/Linearboost/prebuilt/system/media/bootanimation.zip:system/media/bootanimation.zip
@@ -50,7 +45,6 @@ PRODUCT_COPY_FILES += \
 # SU Support
 PRODUCT_COPY_FILES += \
     vendor/Linearboost/prebuilt/misc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-    vendor/Linearboost/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
 # Gapps backup script
 PRODUCT_COPY_FILES += \
