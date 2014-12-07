@@ -9,25 +9,6 @@ fi
 
 echo $(date) >> $LINEAR_LOGFILE
 
-#CPU Governor settings
-CPU_GOV=`grep "CPU_GOV" $LINEAR_CONF | cut -d '=' -f2`
-if [ "`grep CPU_GOV=1 $LINEAR_CONF`" ]; then
-  echo interactive > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor;
-  echo Interactive CPU Governor >> $LINEAR_LOGFILE;
-elif [ "`grep CPU_GOV=2 $LINEAR_CONF`" ]; then  
-  echo conservative > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor;
-  echo Conservative CPU Governor >> $LINEAR_LOGFILE;
-elif [ "`grep CPU_GOV=4 $LINEAR_CONF`" ]; then  
-  echo powersave > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor;
-  echo Powersave CPU Governor >> $LINEAR_LOGFILE;
-elif [ "`grep CPU_GOV=5 $LINEAR_CONF`" ]; then  
-  echo performance > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor;
-  echo Performance CPU Governor >> $LINEAR_LOGFILE;
-else
-  echo ondemand > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor;
-  echo Ondemand CPU Governor >> $LINEAR_LOGFILE;
-fi
-
 #io scheduler settings
 SCHED=`grep "SCHED" $LINEAR_CONF | cut -d '=' -f2`
 if [ "`grep SCHED=1 $LINEAR_CONF`" ]; then
