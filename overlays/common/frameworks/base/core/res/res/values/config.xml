@@ -38,8 +38,6 @@
         <item>reboot</item>
         <item>rebootrecovery</item>
         <item>rebootbootloader</item>
-        <item>bugreport</item>
-        <item>users</item>
     </string-array>
 
     <!-- Disable stock OTA components if installed -->
