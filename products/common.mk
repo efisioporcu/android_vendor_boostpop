@@ -1,6 +1,6 @@
 # Generic product
-PRODUCT_NAME := Linearboost
-PRODUCT_BRAND := Linearboost
+PRODUCT_NAME := BoostPop
+PRODUCT_BRAND := BoostPop
 PRODUCT_DEVICE := generic
 
 # Common build prop overrides 
@@ -14,7 +14,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     keyguard.no_require_sim=true
 
-# Linearboost build prop
+# Boost build prop
 PRODUCT_PROPERTY_OVERRIDES += \
     pm.sleep.mode=1 \
     wifi.supplicant_scan_interval=300 

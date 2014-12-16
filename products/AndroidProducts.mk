@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/linearboost_hammerhead.mk \
+    $(LOCAL_DIR)/boostpop_hammerhead.mk \
