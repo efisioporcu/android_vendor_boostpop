@@ -43,6 +43,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/Linearboost/prebuilt/system/media/bootanimation.zip:system/media/bootanimation.zip
 
+# init.d script support
+PRODUCT_COPY_FILES += \
+    vendor/Linearboost/prebuilt/bin/sysinit:system/bin/sysinit
+
 # SU Support
 PRODUCT_COPY_FILES += \
     vendor/Linearboost/prebuilt/misc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
