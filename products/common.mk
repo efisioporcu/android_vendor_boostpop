@@ -1,6 +1,6 @@
 # Generic product
-PRODUCT_NAME := BoostPop
-PRODUCT_BRAND := BoostPop
+PRODUCT_NAME := Boostpop
+PRODUCT_BRAND := Boostpop
 PRODUCT_DEVICE := generic
 
 # Common build prop overrides 
@@ -38,10 +38,6 @@ PRODUCT_COPY_FILES += \
 # Enable SIP+VoIP
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
-
-# init.d script support
-PRODUCT_COPY_FILES += \
-    vendor/Linearboost/prebuilt/bin/sysinit:system/bin/sysinit
 
 # Bootanimation support
 PRODUCT_COPY_FILES += \
